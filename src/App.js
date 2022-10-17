@@ -6,17 +6,24 @@ import PizzaBlock from './components/PizzaBlock';
 
 function App() {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <Header/>
-      <div class="content">
-        <div class="container">
-          <div class="content__top">
+      <div className="content">
+        <div className="container">
+          <div className="content__top">
             <Categories/>
             <Sort/>
           </div>
-          <h2 class="content__title">Все пиццы</h2>
-          <div class="content__items">
-            <PizzaBlock/>
+          <h2 className="content__title">Все пиццы</h2>
+          <div className="content__items">
+            <PizzaBlock price="500" title="Чизбургер-пицца"/>
+            <PizzaBlock price="400" title="Пеперони"/>
+            <PizzaBlock price="450" title="Моцарела"/>
+            <PizzaBlock price="550" title="Классическая"/>
+            <PizzaBlock price="380" title="Гамбургер-пицца"/>
+            <PizzaBlock price="520" title="Сушенная-пицца"/>
+            <PizzaBlock price="640" title="Пивная-пицца"/>
+            <PizzaBlock price="660" title="KFC-пицца"/>
           </div>
         </div>
       </div>
